@@ -6,12 +6,14 @@ var vsts = [
 		description: `hi! ✌<br/>
 im melody. on the internet i release stuff under the name unplugred.<br/>
 after studying audio engineering i decided to make my own vst plugins for me and my friends because i didnt have money to buy them and almost nothing was available on linux.<br/>
-i decided to release them onto the internet as open source after my friends convinced me theyre good and implored me to put them out there.<br/>
+i released them onto the internet as open source after my friends convinced me theyre good and implored me to put them out there.<br/>
 in here youd find no modeling of capacitors or diodes. no emulation of anything.<br/>
 these are completely a result of my own exploration of code and sound, and as a result some of them are good, while others not so much.<br/>
 i hope these bring you joy and would love to hear what u make with them.<br/>
 u can reach me via discord (@unplugred) and email (melody@unplug.red).<br/>
-also! our discord community made two collaborative albums. <a href="https://unplugcord.bandcamp.com/" target="_blank">check them out!</a><br/>
+all of my plugins follow the guiding principles of <a href="https://unplug.red/manifesto" target="_blank">the new software manifesto</a>, and no ai was used to create them.<br/>
+<br/>
+also! our discord community made three collaborative albums. <a href="https://unplugcord.bandcamp.com/" target="_blank">check them out!</a><br/>
 lastly, thanks to <a href="https://laulaulau.bandcamp.com/" target="_blank">lau</a>, this wouldnt exist without her.`,
 		hideicon: true
 	},{
@@ -20,23 +22,8 @@ lastly, thanks to <a href="https://laulaulau.bandcamp.com/" target="_blank">lau<
 		color: "orange",
 		description: `
 <br/>
-<b>Q: Why Patreon?<br/>
-A:</b> i cannot afford to pay rent only some of the time.<br/>
-before i moved to patreon the income i got from this fluctuated a lot.<br/>
-patreon allows me to have a stable income i can rely on.<br/>
-<br/>
-<b>Q: But I dont like subscriptions<br/>
-A:</b> the everything bundle used to be worth 100$ before i moved to patreon.<br/>
-this is a low price considering people pay 90$ for a single plugin.<br/>
-if youre at the lowest tier of my patreon, it would take u 3 years to get to that same amount.<br/>
-if having a reoccuring payment stresses you out, u are welcomed to use the free version for now.<br/>
-though i appreciate your willingness to help, one time donations wont help me do this full time.<br/>
-<br/>
-<b>Q: But I don't have money<br/>
-A:</b> music creation should not be gatekept by money.<br/>
-thats why i made the free versions.<br/>
-theres no shame in using them and they are fully functional.<br/>
-i promise i wont judge.<br/>
+<b>Q: Is this vibe coded?<br/>
+A:</b> NO AI WAS USED TO CREATE ANY OF MY PRODUCTS.<br/>
 <br/>
 <b>Q: I found a bug!<br/>
 A:</b> THANK YOU for your effort to report bugs<br/>
@@ -119,7 +106,7 @@ also saves u a few clicks as u can bulk download everything.`,
 		description: `
 multiband distortion plugin for advanced tone shaping.<br/>
 up to four modules can be added to any one of the four bands.<br/>
-as of writing, there are 21 modules available to choose from.<br/>
+as of writing, there are 22 modules available to choose from.<br/>
 in the right hands the plugin can produce highly complex and intricate tones.<br/>
 common usecases include very harsh distortions being applied on a narrow band to create more subtle effects,<br/>
 and bass recordings being distorted on the higher frequencies without hurting the low end.<br/>
@@ -149,21 +136,6 @@ the parameters are highly automatable and can produce a dub delay effect when au
 		decoration: {width:240,height:231},
 		ui: {width:507,height:465,deg:20}
 	},{
-		title: "ModMan",
-		id: "mm",
-		color: "teal",
-		tagline: "Adds movement.",
-		description: `
-modulation effect that produces organic and ever changing randomized movements, based on a perlin noise algorithm.<br/>
-allows modulating a tape drift, low pass and its resonance, saturation, and amplitude.<br/>
-with this effect you can add movement to a pad, widen the stereo field, create a tape style effect, or experiment with bizzare settings to create interesting textures.<br/>
-its cool!`,
-		supported: ["Windows","MacOS","Linux","64 Bit","Open Source","VST3","Audio Unit","CLAP"],
-		freedownload: {url:"https://www.patreon.com/posts/modman-free-136081903"},
-		paiddownload: {url:"https://www.patreon.com/posts/modman-136081521"},
-		decoration: {width:163,height:324},
-		ui: {width:660,height:330,deg:15}
-	},{
 		title: "SunBurnt",
 		id: "sb",
 		color: "teal",
@@ -184,6 +156,35 @@ if youre experiencing problems, try increasing the buffer size!`,
 		decoration: {width:230,height:221},
 		ui: {width:552,height:501,deg:15}
 	},{
+		title: "Pisstortion",
+		id: "ps",
+		color: "teal",
+		tagline: "Advanced sinefold distortion plugin.",
+		description: `
+a better attempt at achieving what plastic funeral tried to achieve.<br/>
+harsh and metallic fold distortion with a lot of controls and an innovative stereo widening algorithm.<br/>
+guarenteed to destroy any mix.`,
+		supported: ["Windows","MacOS","Linux","64 Bit","Open Source","VST3","Audio Unit","CLAP"],
+		freedownload: {url:"https://www.patreon.com/posts/pisstortion-free-79085897"},
+		paiddownload: {url:"https://www.patreon.com/posts/pisstortion-79085974"},
+		decoration: {width:94,height:300},
+		ui: {width:242,height:462,deg:25}
+	},{
+		title: "ModMan",
+		id: "mm",
+		color: "teal",
+		tagline: "Adds movement.",
+		description: `
+modulation effect that produces organic and ever changing randomized movements, based on a perlin noise algorithm.<br/>
+allows modulating a tape drift, low pass and its resonance, saturation, and amplitude.<br/>
+with this effect you can add movement to a pad, widen the stereo field, create a tape style effect, or experiment with bizzare settings to create interesting textures.<br/>
+its cool!`,
+		supported: ["Windows","MacOS","Linux","64 Bit","Open Source","VST3","Audio Unit","CLAP"],
+		freedownload: {url:"https://www.patreon.com/posts/modman-free-136081903"},
+		paiddownload: {url:"https://www.patreon.com/posts/modman-136081521"},
+		decoration: {width:163,height:324},
+		ui: {width:660,height:330,deg:15}
+	},{
 		title: "PNCH",
 		id: "pnch",
 		color: "teal",
@@ -202,6 +203,22 @@ APPLY BEFORE DISTORTION FOR IDEAL EFFECT.<br/>
 		paiddownload: {url:"https://www.patreon.com/posts/pnch-79086091"},
 		decoration: {width:200,height:182},
 		ui: {width:128,height:148,deg:40}
+	},{
+		title: "Red Bass",
+		id: "rb",
+		color: "teal",
+		tagline: "Low-end enchancer excellent for kicks and speech.",
+		description: `
+sub oscillator sidechained to incoming signal.<br/>
+put a drum loop or a kick thats lacking some oompth in there and the result will be instantly thick.<br/>
+apply with caution if not in a proper mixing environment.<br/>
+<br/>
+<center><a class="demovid" href="javascript:void(0);" onclick='setpopup(1, 2, "Instructional demo for Red Bass.", "https://www.youtube.com/embed/4iIJjWvpb_s?autoplay=1", false, true, 20, 15)'>▶ How to use</a> (demo video)</center>`,
+		supported: ["Windows","MacOS","Linux","64 Bit","Open Source","VST3","Audio Unit","CLAP"],
+		freedownload: {url:"https://www.patreon.com/posts/red-bass-free-79087099"},
+		paiddownload: {url:"https://www.patreon.com/posts/red-bass-79087143"},
+		decoration: {width:240,height:157},
+		ui: {width:322,height:408,deg:20}
 	},{
 		title: "Magic Carpet",
 		id: "mc",
@@ -230,22 +247,6 @@ the plugin can also produce unique artifacts when used in fast release mode, whi
 		paiddownload: {url:"https://www.patreon.com/posts/diet-audio-112826367"},
 		decoration: {width:402,height:219},
 		ui: {width:384,height:384,deg:20}
-	},{
-		title: "Red Bass",
-		id: "rb",
-		color: "teal",
-		tagline: "Low-end enchancer excellent for kicks and speech.",
-		description: `
-sub oscillator sidechained to incoming signal.<br/>
-put a drum loop or a kick thats lacking some oompth in there and the result will be instantly thick.<br/>
-apply with caution if not in a proper mixing environment.<br/>
-<br/>
-<center><a class="demovid" href="javascript:void(0);" onclick='setpopup(1, 2, "Instructional demo for Red Bass.", "https://www.youtube.com/embed/4iIJjWvpb_s?autoplay=1", false, true, 20, 15)'>▶ How to use</a> (demo video)</center>`,
-		supported: ["Windows","MacOS","Linux","64 Bit","Open Source","VST3","Audio Unit","CLAP"],
-		freedownload: {url:"https://www.patreon.com/posts/red-bass-free-79087099"},
-		paiddownload: {url:"https://www.patreon.com/posts/red-bass-79087143"},
-		decoration: {width:240,height:157},
-		ui: {width:322,height:408,deg:20}
 	},{
 		title: "Scope",
 		id: "sp",
@@ -278,20 +279,6 @@ and the samples were recorded with a high quality reproduction of the soundcard 
 		freedownload: {url:"https://www.patreon.com/posts/mpaint-79087173"},
 		decoration: {width:131,height:208},
 		ui: {width:468,height:40,deg:40}
-	},{
-		title: "Pisstortion",
-		id: "ps",
-		color: "teal",
-		tagline: "Advanced sinefold distortion plugin.",
-		description: `
-a better attempt at achieving what plastic funeral tried to achieve.<br/>
-harsh and metallic fold distortion with a lot of controls and an innovative stereo widening algorithm.<br/>
-guarenteed to destroy any mix.`,
-		supported: ["Windows","MacOS","Linux","64 Bit","Open Source","VST3","Audio Unit","CLAP"],
-		freedownload: {url:"https://www.patreon.com/posts/pisstortion-free-79085897"},
-		paiddownload: {url:"https://www.patreon.com/posts/pisstortion-79085974"},
-		decoration: {width:94,height:300},
-		ui: {width:242,height:462,deg:25}
 	},{
 		title: "VU",
 		id: "vu",
