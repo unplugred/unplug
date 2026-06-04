@@ -259,14 +259,14 @@ html, body {
 	transform: skewY(-16deg);
 	color: #FF00FF;
 	position: relative;
-	left: 0em;
+	left: .2em;
 	top: -.5em;
 }
 .tagline {
 	display: inline-block;
 	font-size: 1.1em;
 	letter-spacing: .02em;
-	line-height: .75em;
+	line-height: .65;
 	margin-top: -.25em;
 	padding-left: .07em;
 }
