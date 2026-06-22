@@ -4,7 +4,7 @@
   "description": "unplug your mind for best experience.",
   "author": "Melody",
   "dependencies": {
-    "ejs": "^5.0.2",
+    "ejs": "^6.0.1",
     "express": "^5.2.1"
   }
 }
