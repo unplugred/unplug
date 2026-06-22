@@ -4,11 +4,6 @@ echo
 if [[ $REPLY =~ ^[Dd]$ ]]
 then
 	echo "DEBUG MODE"
-	if [[ $EUID -ne 0 ]]
-	then
-		echo "This script must be run as root" 1>&2
-		exit 1
-	fi
 
 	read -p "Sure? [Y/N] " -n 1 -r
 	echo
