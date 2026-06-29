@@ -185,6 +185,27 @@ its cool!`,
 		decoration: {width:163,height:324},
 		ui: {width:660,height:330,deg:15}
 	},{
+		title: "Sucrose",
+		id: "scrs",
+		color: "teal",
+		rating: "New!",
+		comingsoon: true,
+		tagline: "Transparent harmonics and subharmonic generator.",
+		description: `
+unique algorithm that generates harmonics and subharmonics in a precise and surgical manner. uses an innovative hilbert transform based phase multiplication technique.<br/>
+though it may be compared to distortion, it does not alter dynamics and achieves clean output with less intermodulation, in a way never seen in traditional distortion plugins.<br/>
+<br/>
+utilize the subharmonic knob to make basses and kicks beefy, or increase the 2nd and 3rd harmonic to tone-shape guitars and synths, making them cut through any mix.<br/>
+<br/>
+sucrose is a collaboration between me and the amazing and talented blepfx.<br/>
+<a href="https://fx.amee.ee/" target="_blank"> you should definitely check her out</a>, shes the best in the game.<br/>
+the dsp was made by her, and the ui by me !<br/>
+it was created as an entry for (and currently participating in) the <a href="https://www.kvraudio.com/kvr-developer-challenge/2026/" target="_blank">2026 kvr developer challenge</a>.`,
+		supported: ["Windows","MacOS","Linux","64 Bit","Open Source","VST3","Audio Unit","CLAP"],
+		freedownload: {url:""},
+		decoration: {width:163,height:324},
+		ui: {width:534,height:573,deg:15}
+	},{
 		title: "PNCH",
 		id: "pnch",
 		color: "teal",
