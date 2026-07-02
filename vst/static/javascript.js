@@ -79,13 +79,16 @@ function update(timestamp) {
 	prevtime = timestamp;
 
 	if((!ismobile || isselected) && ((currenthover != temporalhover && temporalhover != -1) || (temporalhover == -1 && currenthover != currentselected))) {
-		if(currenthover >= 0) vsts[currenthover].div.className = "leftitem";
+		if(currenthover >= 0 && !vsts[currenthover].hidden)
+			vsts[currenthover].div.className = "leftitem";
 		if(temporalhover == -1) {
-			vsts[currentselected].div.className = "leftitem lefthover leftselected";
+			if(!vsts[currentselected].hidden)
+				vsts[currentselected].div.className = "leftitem lefthover leftselected";
 			currenthover = currentselected;
 			temporalhover = currentselected;
 		} else {
-			if(currentselected == currenthover && currenthover >= 0) vsts[currenthover].div.className += " leftselected";
+			if(currentselected == currenthover && currenthover >= 0 && !vsts[currenthover].hidden)
+				vsts[currenthover].div.className += " leftselected";
 			vsts[temporalhover].div.className = "leftitem lefthover";
 			if(currentselected == temporalhover) vsts[temporalhover].div.className += " leftselected";
 			currenthover = temporalhover;
@@ -116,8 +119,10 @@ function switchselected(id,addtohistory) {
 		return;
 	}
 
-	vsts[currentselected].div.className = "leftitem";
-	vsts[id].div.className = "leftitem lefthover leftselected";
+	if(!vsts[currentselected].hidden)
+		vsts[currentselected].div.className = "leftitem";
+	if(!vsts[id].hidden)
+		vsts[id].div.className = "leftitem lefthover leftselected";
 	currentselected = id;
 	if(addtohistory)
 		window.history.replaceState(null,vsts[id].title,"/"+vsts[id].title.replace(/\s/g,"").toLowerCase());
@@ -125,6 +130,12 @@ function switchselected(id,addtohistory) {
 
 let leftside = document.getElementById("leftwrap");
 for(let i = 0; i < vsts.length; i++) {
+	if(vsts[i].hidden) {
+		if(location.pathname.toLowerCase().endsWith(vsts[i].title.replace(/\s/g,"").toLowerCase()))
+			switchselected(i,false);
+		continue;
+	}
+
 	vsts[i].div = document.createElement('a');
 	vsts[i].div.onmousemove = function(){temporalhover = i};
 	vsts[i].div.onmouseout = function(){temporalhover = -1};
