@@ -59,7 +59,10 @@ function sanitize(string) {
 	} %>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel=StyleSheet href="<%= assets %>/stylesheet.css?v=22" type="text/css" media=screen><%
+		<link rel=StyleSheet href="<%= assets %>/stylesheet.css?v=23" type="text/css" media=screen>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet"><%
 	for(let i = 0; i < vsts.length; i++) if(vsts[i].decoration !== undefined) { %>
 		<link rel="prefetch" href="<%= assets %>/<%= vsts[i].id %>/gif.webp" /><%
 	} %>
@@ -187,7 +190,7 @@ for(let tier = 15; tier >= 10; tier -= 5) {
 	if(tier == 15) {
 		%><%- patronhtml; %><%
 	} else if(tier == 10) {
-		patronhtml += patronhtml;
+		patronhtml += patronhtml+patronhtml;
 			%><div style="flex: 1 0 auto; display: flex;"><div id="patronsscroll"><div id="patrons10" style="animation-delay: <%= Math.floor(Math.random()*-50) %>s"><%- patronhtml %></div></div><i>Thank you!</i></div><%
 	}
 } %>

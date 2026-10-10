@@ -3,7 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel=StyleSheet href="<%= assets %>/stylesheet.css?v=11" type="text/css" media=screen>
+		<link rel=StyleSheet href="<%= assets %>/stylesheet.css" type="text/css" media=screen>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
 		<style>
 			body {
 				background: #FFF;
@@ -63,11 +66,16 @@
 			#uiwrap {
 				width: auto;
 				height: auto;
+				margin: auto;
 			}
 			#uishadow {
 				top: 8px;
 				left: 8px;
 				z-index: -1;
+				transform: none;
+			}
+			#ui {
+				transform: none;
 			}
 			#note {
 				top: 0;
@@ -102,14 +110,8 @@
 			.sb #pluginlogo * {
 				height: 125%;
 			}
-			.mm .lefttitle {
-				margin-top: 5px;
-			}
 			.scrs #pluginlogo * {
 				height: 159%;
-			}
-			.scrs .lefttitle {
-				margin-top: 22px;
 			}
 		</style>
 	</head>

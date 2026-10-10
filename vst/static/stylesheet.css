@@ -11,7 +11,7 @@ html, body {
 	height: 100vh;
 	background: url(bg.webp) 5px 0, #FFF;
 	background-attachment: fixed;
-	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
 	line-height: .95;
 	overflow: clip;
 }
@@ -189,12 +189,12 @@ body {
 	padding-bottom: .25em;
 	padding-left: .35em;
 	color: #000;
-	font-weight: normal;
+	font-weight: 400;
 	display: block;
 	text-decoration: none;
 }
 .leftselected .lefttitle {
-	font-weight: bold !important;
+	font-weight: 700 !important;
 }
 .lefthover {
 	animation: windowopen .2s ease-out;
@@ -227,11 +227,12 @@ body {
 	margin-right: 2px;
 }
 .lefttitle {
+	font-weight: 300;
 	font-size: 1.8em;
-	letter-spacing: -.11em;
+	letter-spacing: -.08em;
 	display: inline-block;
 	line-height: .75;
-	margin-bottom: .18em;
+	margin-top: .02em;
 }
 .rating {
 	display: inline-block;
@@ -247,8 +248,7 @@ body {
 	display: inline-block;
 	font-size: max(13px, 1em);
 	letter-spacing: .02em;
-	line-height: .65;
-	margin-top: -.25em;
+	line-height: .8;
 	padding-left: .07em;
 }
 .leftseparator {
@@ -376,7 +376,7 @@ body {
 }
 #title {
 	font-size: 1.33em;
-	font-weight: bold;
+	font-weight: 900;
 	font-variant: petite-caps;
 	text-shadow: 3px 3px #00000026;
 	transform: scaleX(3) skewX(-10deg);
@@ -410,13 +410,13 @@ body {
 }
 .download {
 	display: inline-block;
-	font-size: .9em;
 	color: #FFF !important;
 	background-color: #000;
 	font-variant: petite-caps;
 	text-decoration: none;
-	transform: skewX(-24deg);
+	transform: scaleY(.9) skewX(-24deg);
 	margin-top: 4px;
+	font-weight: 500;
 }
 .download:hover {
 	background-color: #F0F;
@@ -468,7 +468,7 @@ iframe {
 	filter: blur(.7vh);
 	opacity: .12;
 	letter-spacing: -.115em;
-	font-weight: bold;
+	font-weight: 600;
 	pointer-events: none;
 	animation: scrollup 30s infinite linear;
 	z-index: -100;
@@ -529,8 +529,8 @@ iframe {
 	pointer-events: none;
 }
 #note text {
-	font-size: 16px;
-	font-weight: bold;
+	font-size: 15.8px;
+	font-weight: 500;
 }
 #note svg {
 	position: absolute;
@@ -666,7 +666,7 @@ audio {
 }
 @keyframes patronscroll {
 	from { transform: translateX(0%); }
-	to { transform: translateX(-50%); }
+	to { transform: translateX(-33.33%); }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -702,7 +702,7 @@ audio {
 		padding-right: 10vw;
 	}
 	.leftselected .lefttitle {
-		font-weight: normal !important;
+		font-weight: 300 !important;
 	}
 	.lefthover:not(:hover) .leftiteminner {
 		color: #000 !important;

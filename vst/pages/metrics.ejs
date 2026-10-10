@@ -26,6 +26,10 @@
 		<meta property="og:image" content="<%= unplugassets %>/objects/c10.gif">
 		<meta name="twitter:image" content="<%= unplugassets %>/objects/c10.gif">
 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+
 		<style>
 			html, body {
 				padding: 0;
@@ -34,7 +38,7 @@
 				height: 100vh;
 				background: url(bginvert.webp) 0 0;
 				background-attachment: fixed;
-				font-family: 'Helvetica Neue', Arial, sans-serif;
+				font-family: Inter, 'Helvetica Neue', Arial, sans-serif;
 				line-height: .95;
 				overflow: clip;
 				font-size:16pt;
@@ -43,7 +47,7 @@
 				display: flex;
 			}
 			a {
-				color: black;
+				color: black !important;
 				text-decoration: none;
 			}
 			a:hover {
@@ -69,7 +73,7 @@
 			}
 			.seltitle {
 				display: inline-block;
-				font-weight: bold;
+				font-weight: 700;
 				min-width: 100px;
 			}
 			.selopt {
@@ -78,7 +82,7 @@
 			}
 			.selactive {
 				background: #FF8400;
-				color: white;
+				color: white !important;
 				pointer-events: none;
 			}
 			#warning {
@@ -250,7 +254,7 @@
 				},
 				defaults: {
 					font: {
-						family: "'Helvetica Neue', Arial, sans-serif"
+						family: "Inter, 'Helvetica Neue', Arial, sans-serif"
 					}
 				}
 			});
