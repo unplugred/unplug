@@ -400,13 +400,14 @@ body {
 	image-rendering: pixelated;
 }
 #supported {
-	margin-bottom: 7px;
+	margin-bottom: 12px;
+	display: flex;
 }
 .supportedicon {
 	height: 27px;
 	max-width: 36px;
 	margin: 1px;
-	display: inline-block;
+	display: block;
 }
 .download {
 	display: inline-block;
