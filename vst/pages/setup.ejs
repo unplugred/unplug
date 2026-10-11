@@ -14,6 +14,7 @@
 				height: 100vh;
 				justify-content: center;
 				align-items: center;
+				pointer-events: none;
 			}
 			#content {
 				width: 202px;
@@ -48,7 +49,7 @@
 				position: absolute;
 				bottom: -68px;
 				left: 10px;
-				width: calc(100vh - 107px);
+				width: 262px;
 				z-index: 2;
 				margin-bottom: -5px;
 			}
@@ -65,7 +66,7 @@
 			}
 			#pluginlogo {
 				animation: none;
-				top: 2vh;
+				top: 8px;
 				z-index: 1;
 			}
 			#pluginlogo * {
@@ -74,7 +75,7 @@
 				width: 100%;
 			}
 			.pf #left {
-				bottom: -85px;
+				bottom: -80px;
 			}
 			.pf .lefticon {
 				margin-right: -3px;
@@ -161,7 +162,7 @@
 				margin-left: -2px;
 			}
 			.mc #left {
-				bottom: -78px;
+				bottom: -73px;
 			}
 			.mc .lefticon {
 				margin-top: -5px;
@@ -173,7 +174,7 @@
 				background-position: 28% top;
 			}
 			.bndl #left {
-				bottom: -78px;
+				bottom: -73px;
 			}
 		</style>
 	</head>
@@ -195,9 +196,9 @@
 			<div id="right" class="section">
 				<a id="left" class="leftitem lefthover leftselected" href="javascript:void(0)">
 					<div class="leftiteminner lefticonitem">
-						<div class="lefticon"></div>
-						<div class="leftiteminnerinner">
-							<div class="lefttitle"></div>
+						<div class="lefticon" style="filter: none !important"></div>
+						<div class="leftiteminnerinner" style="color: #24A6B3 !important">
+							<div class="lefttitle" style="font-weight: 700 !important"></div>
 						</div>
 					</div>
 				</a>
@@ -220,7 +221,7 @@
 				document.getElementsByClassName("leftiteminner")[0].className += " " + vsts[i].color;
 				document.body.className = vsts[i].id;
 				document.getElementById("pluginlogo1").style.backgroundImage = "url(/"+vsts[i].id+"/text.webp)";
-				document.getElementById("rainbow").style.backgroundPositionY = (String)((i*-300)/vsts.length)+"vh";
+				document.getElementById("rainbow").style.backgroundPositionY = (String)((i*-1024)/(vsts.length-1))+"px";
 				document.title = vsts[i].title;
 			}
 		</script>

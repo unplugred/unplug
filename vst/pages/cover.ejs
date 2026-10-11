@@ -133,9 +133,9 @@
 			<div id="contentwrap">
 				<a id="left" class="leftitem lefthover leftselected" href="javascript:void(0)">
 					<div class="leftiteminner lefticonitem">
-						<div class="lefticon"></div>
-						<div class="leftiteminnerinner">
-							<div class="lefttitle"></div>
+						<div class="lefticon" style="filter: none !important"></div>
+						<div class="leftiteminnerinner" style="color: #24A6B3 !important">
+							<div class="lefttitle" style="font-weight: 700 !important"></div>
 						</div>
 					</div>
 				</a>
@@ -180,13 +180,13 @@
 				uishadow.style.width = vsts[i].ui.width+"px";
 				ui.style.height = vsts[i].ui.height+"px";
 				uishadow.style.height = vsts[i].ui.height+"px";
-				ui.style.marginBottom = "calc(5vh - " + (String)(vsts[i].ui.height*.05)+"px)";
+				ui.style.marginBottom = (String)(35-vsts[i].ui.height*.05)+"px";
 				document.getElementsByClassName("lefticon")[0].style.backgroundImage = "url(/"+vsts[i].id+"/icon.svg)";
 				document.getElementsByClassName("lefttitle")[0].innerText = vsts[i].title;
 				document.getElementsByClassName("leftiteminner")[0].className += " " + vsts[i].color;
 				document.body.className = vsts[i].id;
 				document.getElementById("pluginlogo1").style.backgroundImage = "url(/"+vsts[i].id+"/text.webp)";
-				document.getElementById("rainbow").style.backgroundPositionY = (String)((i*-300)/vsts.length)+"vh";
+				document.getElementById("rainbow").style.backgroundPositionY = (String)((i*-1024)/vsts.length)+"px";
 				document.title = vsts[i].title;
 			}
 		</script>
