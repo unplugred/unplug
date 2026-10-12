@@ -59,7 +59,7 @@ function sanitize(string) {
 	} %>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel=StyleSheet href="<%= assets %>/stylesheet.css?v=25" type="text/css" media=screen>
+		<link rel=StyleSheet href="<%= assets %>/stylesheet.css?v=26" type="text/css" media=screen>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet"><%
@@ -120,7 +120,9 @@ function sanitize(string) {
 					</div>
 				</div>
 				<div id="center" class="section">
-					<a id="back" href="/" onclick="clickitem(-1)"></a>
+					<a id="back" href="/" onclick="clickitem(-1)">
+						<svg version="1.1" viewBox="0 0 7.9375 7.9375" xmlns="http://www.w3.org/2000/svg"><path d="m0 0v7.9375h1.8516v-4.777l4.7775 4.777h1.3084v-1.3084l-4.777-4.7775h4.777v-1.8516z"/></svg>
+					</a>
 					<div id="infowrap" class="win-wrap">
 						<div id="info" class="win-pos <%= vsts[currentselected].color %><% if(vsts[currentselected].decoration === undefined) { %> winhasicon<% } %>">
 							<div class="windowbgwrap">
